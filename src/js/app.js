@@ -1,6 +1,8 @@
 import './parts/menu.js'
+import { notice } from './parts/notice.js'
 import { fancyGallery } from './static/fancybox.js'
 
+notice()
 fancyGallery()
 
 // import './parts/sliders.js'

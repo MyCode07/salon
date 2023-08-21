@@ -38,10 +38,8 @@
 
             display: flex;
             align-items: center;
-
-            & > :not(:last-child) {
-                @include adaptive-value("margin-right", 24, 15, 1);
-            }
+            flex-wrap: wrap;
+            @include adaptive-value("gap", 24, 15, 1);
         }
     }
 

@@ -47,7 +47,6 @@
         span {
             display: block;
             margin-top: 0.5em;
-            text-transform: lowercase;
             font-weight: 500;
             font-size: 16px;
         }
@@ -87,11 +86,12 @@
         }
 
         h3 {
-            @include adaptive-value("font-size", 18, 16, 1);
+            @include adaptive-value("font-size", 18, 14, 1);
             font-weight: 500;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             text-transform: lowercase;
-
+            text-align: right;
+            opacity: 0.5;
             @media (max-width: 768px) {
                 text-align: center;
             }

@@ -25,12 +25,12 @@ document.addEventListener('click', function (e) {
 export function notice() {
     const notice = document.querySelector('.notice');
     const accept = CookieManager.get('accept');
-    CookieManager.remove('accept');
-    
-    if (!accept) {
-        setTimeout(() => {
-            notice.classList.add('_open')
-            allowClick = true
-        }, 5000);
-    }
+    // CookieManager.remove('accept');
+
+    // if (!accept) {
+    setTimeout(() => {
+        notice.classList.add('_open')
+        allowClick = true
+    }, 5000);
+    // }
 }
